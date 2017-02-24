@@ -18,9 +18,9 @@ namespace ClimbingStairs
         public static int ClimbStairs(int n)
         {
             int result = 0;
-            while ((n -= 2) > 1)
+            while ((n--) >= 2)
             {
-                result += nChooseK(n + 1, 2);
+                result += nChooseK(n, 2);
             }
 
             // add a case of all single steps and return
